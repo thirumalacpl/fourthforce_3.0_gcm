@@ -52,62 +52,75 @@ success: function (result) {
       $(".ui-icon-loading").hide();
 }
     if(pas != ''){
-      //alert(pas+'sup');
+     //alert(pas+'sup');
         sessionStorage.setItem("logged_in","1");
         sessionStorage.setItem("regionArray",JSON.stringify(result[0]));
-        //sessionStorage.setItem("usernamearray",JSON.stringify(result[0]));
         sessionStorage.setItem("supervisor_new_array",JSON.stringify(result[1]));
         sessionStorage.setItem("new_verification_count_array",JSON.stringify(result[2]));
         sessionStorage.setItem("supervisor_inprogress_array",JSON.stringify(result[3]));
         sessionStorage.setItem("supervisor_inprogress_count_array",JSON.stringify(result[4]));
         sessionStorage.setItem("supervisor_verified_array",JSON.stringify(result[5]));
+
         sessionStorage.setItem("supervisor_verified_count_array",JSON.stringify(result[6]));
         sessionStorage.setItem("supervisor_not_verified_array",JSON.stringify(result[7]));
         sessionStorage.setItem("supervisor_not_verified_count_array",JSON.stringify(result[8]));
         sessionStorage.setItem("supervisor_completed_array",JSON.stringify(result[9]));
         sessionStorage.setItem("supervisor_completed_count_array",JSON.stringify(result[10]));
         sessionStorage.setItem("multiple_documents_array",JSON.stringify(result[11]));
+
         sessionStorage.setItem("addressid_records_array",JSON.stringify(result[12]));
         sessionStorage.setItem("educational_records_array",JSON.stringify(result[13]));
         sessionStorage.setItem("employment_records_array",JSON.stringify(result[14]));
         sessionStorage.setItem("supervisor_activity_log_array",JSON.stringify(result[15]));
-        sessionStorage.setItem("gcm_reg_id_array",JSON.stringify(result[16]));
 
-         sessionStorage.setItem("activity_log_supervisor_details_array",JSON.stringify(result[17]));
-          sessionStorage.setItem("image_log_array",JSON.stringify(result[18]));
-           sessionStorage.setItem("assests_verification_array",JSON.stringify(result[19]));
-            sessionStorage.setItem("bankguarantee_verification_array",JSON.stringify(result[20]));
-             sessionStorage.setItem("address_verification_array",JSON.stringify(result[21]));
-              sessionStorage.setItem("reference_verification_array",JSON.stringify(result[22]));
-               sessionStorage.setItem("distributor_verification_array",JSON.stringify(result[23]));
-                sessionStorage.setItem("distributor_details_array",JSON.stringify(result[24]));
-                 sessionStorage.setItem("web_verification_array",JSON.stringify(result[25]));
-                  sessionStorage.setItem("supplier_details_array",JSON.stringify(result[26]));
-                   sessionStorage.setItem("warehouse_verification_array",JSON.stringify(result[27]));
+        /*sessionStorage.setItem("gcm_reg_id_array",JSON.stringify(result[16]));*/
 
- sessionStorage.setItem("verification_master_array",JSON.stringify(result[28]));
-          sessionStorage.setItem("emp_verification_cumulative_array",JSON.stringify(result[29]));
-           sessionStorage.setItem("driving_details_array",JSON.stringify(result[30]));
-            sessionStorage.setItem("credential_verification_array",JSON.stringify(result[31]));
-             sessionStorage.setItem("identity_verification_array",JSON.stringify(result[32]));
-              sessionStorage.setItem("bankruptcy_verification_array",JSON.stringify(result[33]));
-               sessionStorage.setItem("professional_details_array",JSON.stringify(result[34]));
-                sessionStorage.setItem("employmentgap_verification_array",JSON.stringify(result[35]));
-                 sessionStorage.setItem("delinquent_verification_array",JSON.stringify(result[36]));
-                  sessionStorage.setItem("servant_verification_array",JSON.stringify(result[37]));
-                   sessionStorage.setItem("integrity_lifestyle_verification_array",JSON.stringify(result[38]));
+        sessionStorage.setItem("activity_log_supervisor_details_array",JSON.stringify(result[16]));
 
-    sessionStorage.setItem("edusalary_office_array",JSON.stringify(result[39]));
-                sessionStorage.setItem("criminal_verification_array",JSON.stringify(result[40]));
-                 sessionStorage.setItem("edusalary_education_array",JSON.stringify(result[41]));
-                  sessionStorage.setItem("integrity_lifestyle_permanent_array",JSON.stringify(result[42]));
-                   sessionStorage.setItem("servant_education_array",JSON.stringify(result[43]));
+        sessionStorage.setItem("image_log_array",JSON.stringify(result[17]));
+        sessionStorage.setItem("assests_verification_array",JSON.stringify(result[18]));
+        sessionStorage.setItem("bankguarantee_verification_array",JSON.stringify(result[19]));
+        sessionStorage.setItem("address_verification_array",JSON.stringify(result[20]));
+        sessionStorage.setItem("reference_verification_array",JSON.stringify(result[21]));
 
-     sessionStorage.setItem("coordinator_final_comment_array",JSON.stringify(result[44]));
-                  sessionStorage.setItem("sh_eeem_array",JSON.stringify(result[45]));
-                   /*sessionStorage.setItem("tet_array",JSON.stringify(result[46]));*/
-                    sessionStorage.setItem("supervisor_final_command_array",JSON.stringify(result[46]));
-sessionStorage.setItem("personal_details_array",JSON.stringify(result[47]));
+        sessionStorage.setItem("distributor_verification_array",JSON.stringify(result[22]));
+        sessionStorage.setItem("distributor_details_array",JSON.stringify(result[23]));
+        sessionStorage.setItem("web_verification_array",JSON.stringify(result[24]));
+        sessionStorage.setItem("supplier_details_array",JSON.stringify(result[25]));
+        sessionStorage.setItem("warehouse_verification_array",JSON.stringify(result[26]));
+
+        sessionStorage.setItem("verification_master_array",JSON.stringify(result[27]));
+        sessionStorage.setItem("emp_verification_cumulative_array",JSON.stringify(result[28]));
+        sessionStorage.setItem("driving_details_array",JSON.stringify(result[29]));
+        sessionStorage.setItem("credential_verification_array",JSON.stringify(result[30]));
+        sessionStorage.setItem("identity_verification_array",JSON.stringify(result[31]));
+        sessionStorage.setItem("bankruptcy_verification_array",JSON.stringify(result[32]));
+
+                /*   sessionStorage.setItem("professional_details_array",JSON.stringify(result[34]));*/
+
+        sessionStorage.setItem("employmentgap_verification_array",JSON.stringify(result[33]));
+        sessionStorage.setItem("delinquent_verification_array",JSON.stringify(result[34]));
+        sessionStorage.setItem("servant_verification_array",JSON.stringify(result[35]));
+        sessionStorage.setItem("integrity_lifestyle_verification_array",JSON.stringify(result[36]));
+        sessionStorage.setItem("edusalary_office_array",JSON.stringify(result[37]));
+
+        sessionStorage.setItem("edusalary_education_array",JSON.stringify(result[38]));
+        sessionStorage.setItem("integrity_lifestyle_permanent_array",JSON.stringify(result[39]));
+        sessionStorage.setItem("servant_education_array",JSON.stringify(result[40]));
+
+        sessionStorage.setItem("sh_eeem_array",JSON.stringify(result[41]));
+        sessionStorage.setItem("supervisor_final_command_array",JSON.stringify(result[42]));
+        sessionStorage.setItem("coordinator_final_comment_array",JSON.stringify(result[43]));
+        sessionStorage.setItem("criminal_verification_array",JSON.stringify(result[44]));
+        sessionStorage.setItem("professional_details_array",JSON.stringify(result[45]));
+              
+                 
+                   
+
+        sessionStorage.setItem("personal_details_array",JSON.stringify(result[46]));
+                  
+        /*sessionStorage.setItem("tet_array",JSON.stringify(result[46]));*/
+        sessionStorage.setItem("gcm_reg_id_array",JSON.stringify(result[47]));
 
         $.mobile.loading().hide();
         $(".ui-icon-loading").hide();
