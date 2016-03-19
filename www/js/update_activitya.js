@@ -433,11 +433,11 @@ var settings = {
   
   onSuccess:function(files,data,xhr)
   {
-    alert('success');
+    //alert('success');
     sessionStorage.setItem("ret",JSON.stringify(data));
     ret =  JSON.parse(sessionStorage.getItem("ret"));
     var res = ret.slice(12,100);
-    alert(res+'res');
+   // alert(res+'res');
    //alert(verification_user_id+'verification_user_id');
       //alert(coordinator_id+'coordinator_id');
          //alert(res+'res');
