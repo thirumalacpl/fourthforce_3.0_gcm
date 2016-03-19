@@ -424,7 +424,7 @@ alert("Network Error");
 
 var settings = {
 
-  url: "http://fourthforce.in/verifynew/uploadas.php",
+  url: "http://fourthforce.in/verify/uploadas.php",
   method: "POST",
   allowedTypes:"jpg,png,gif",
   /*allowedTypes:"jpg,png,gif,doc,pdf,zip",*/
